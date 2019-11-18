@@ -17,7 +17,7 @@ int qx[] = { 1, 0, -1, 0 };
 int n;
 
 int sy, sx;
-//ºÐÇÒ ÇÒ°Å
+//ë¶„í•  í• ê±°
 int ans = -1;
 
 
@@ -192,7 +192,7 @@ void dfs(int y, int x, int idx, int dir, int dy1, int dx1, int dy2, int dx2, int
 	if (ny == sy && nx == sx && dir == 3)
 	{
 		
-		// °è»êÇÏ°í
+		// ê³„ì‚°í•˜ê³ 
 		for (int y = 0; y < n; y++)
 		{
 			for (int x = 0; x < n; x++)
@@ -210,7 +210,7 @@ void dfs(int y, int x, int idx, int dir, int dy1, int dx1, int dy2, int dx2, int
 		int s = CalcSection();
 
 		//
-		//Áö¿ö Áà¾ßÇÔ
+		//ì§€ì›Œ ì¤˜ì•¼í•¨
 		if (ans == -1 || ans > s)
 		{
 			ans = s;
@@ -267,7 +267,7 @@ int main()
 		}
 	}
 
-	//°æ°è¼± ¸¸µå´Â ÀÛ¾÷
+	//ê²½ê³„ì„  ë§Œë“œëŠ” ìž‘ì—…
 	for (int y = 0; y <= n-2; y++)
 	{
 		for (int x = 1; x <= n - 1; x++)
